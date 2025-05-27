@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-^p&t_(dbag%g9=2-d9(zhg646=ok+pty19p+)tb+fe7h6iarer
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu118.gitpod.io',
-'8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io']
+'8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io',
+'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
@@ -87,6 +88,11 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io',
+]
+
 
 SITE_ID = 1
 
