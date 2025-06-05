@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu118.gitpod.io',
 '8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io',
-'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io']
+'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io',
+'8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu120.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,6 +82,8 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -91,6 +94,7 @@ AUTHENTICATION_BACKENDS = [
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu119.gitpod.io',
+    'https://8000-acelliott12-boutiquepra-93dfaknf5o3.ws-eu120.gitpod.io'
 ]
 
 
